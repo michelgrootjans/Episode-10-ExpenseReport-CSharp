@@ -32,7 +32,7 @@ namespace ExpenseReport.ConsoleApp
                         name = "Car Rental";
                         break;
                 }
-                printer.Print(String.Format("{0}  {1}\t${2}\n",
+                printer.Print(String.Format("{0} {1}\t${2}\n",
                                             ((expense.type == ExpenseType.Dinner && expense.amount > 5000)
                                              || (expense.type == ExpenseType.Breakfast && expense.amount > 1000))
                                                 ? "X"
