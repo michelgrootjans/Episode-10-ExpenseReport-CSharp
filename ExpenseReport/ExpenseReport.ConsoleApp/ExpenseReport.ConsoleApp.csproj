@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsoleReportPrinter.cs" />
+    <Compile Include="Expense.cs" />
+    <Compile Include="ExpenseReport.cs" />
+    <Compile Include="IReportPrinter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
