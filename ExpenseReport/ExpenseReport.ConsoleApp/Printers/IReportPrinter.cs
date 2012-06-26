@@ -1,4 +1,4 @@
-﻿namespace ExpenseReport.ConsoleApp
+﻿namespace ExpenseReport.ConsoleApp.Printers
 {
     public interface IReportPrinter
     {

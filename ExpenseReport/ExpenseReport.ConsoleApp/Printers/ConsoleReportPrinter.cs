@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ExpenseReport.ConsoleApp
+namespace ExpenseReport.ConsoleApp.Printers
 {
     internal class ConsoleReportPrinter : IReportPrinter
     {

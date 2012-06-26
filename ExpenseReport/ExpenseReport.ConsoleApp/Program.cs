@@ -1,17 +1,20 @@
-﻿namespace ExpenseReport.ConsoleApp
+﻿using ExpenseReport.ConsoleApp.Expenses;
+using ExpenseReport.ConsoleApp.Printers;
+using ExpenseReport.ConsoleApp.Reports;
+
+namespace ExpenseReport.ConsoleApp
 {
     internal class Program
     {
         private static void Main()
         {
-            var report = new ExpenseReport();
-            report.AddExpense(new Expense(ExpenseType.Breakfast, 525));
-            report.AddExpense(new Expense(ExpenseType.Breakfast, 400));
-            report.AddExpense(new Expense(ExpenseType.Breakfast, 500));
-            report.AddExpense(new Expense(ExpenseType.CarRental, 5600));
-            report.AddExpense(new Expense(ExpenseType.Dinner, 1400));
+            var report = new Reports.ExpenseReport();
+            report.AddExpense(new BreakfastExpense(545));
+            report.AddExpense(new DinnerExpense(674));
+            report.AddExpense(new CarRentalExpense(46374));
 
-            report.PrintReport(new ConsoleReportPrinter());
+            var reporter = new ExpenseReporter(report);
+            reporter.PrintReport(new ConsoleReportPrinter());
         }
     }
 }
