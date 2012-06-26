@@ -5,7 +5,7 @@ namespace ExpenseReport.ConsoleApp
 {
     public class ExpenseReport
     {
-        private readonly List<Expense> expenses = new List<Expense>();
+        private readonly IList<Expense> expenses = new List<Expense>();
 
         public void PrintReport(IReportPrinter printer)
         {
